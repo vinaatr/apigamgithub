@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BackgroundColor"
+    tools:context=".setting.SettingActivity">
+
+    <LinearLayout
+        android:id="@+id/container_title"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            style="@style/Color_Btn_Back"
+            android:background="@null"
+            android:contentDescription="@string/content_description_back"
+            android:layout_marginStart="7dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/title_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            style="@style/Text_Title"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="@+id/container_title"
+            app:layout_constraintBottom_toBottomOf="@+id/container_title"
+            android:layout_marginStart="15dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/choose_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Theme"
+        style="@style/Color_Text_Count"
+        android:textSize="25sp"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_title"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/jargon"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Pick a theme that works for you, you can always
+        change themes in your app settings."
+        style="@style/Color_Text_Count"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_theme"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <ImageView
+        android:id="@+id/lightThemeImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/light_theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jargon"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dark_theme"
+        app:layout_constraintStart_toEndOf="@+id/lightThemeImageView"
+        app:layout_constraintTop_toTopOf="@+id/lightThemeImageView"
+        android:layout_marginStart="28dp"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/change_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Theme    "
+        android:textOff="Light Theme    "
+        android:textOn="Dark Theme    "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="352dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

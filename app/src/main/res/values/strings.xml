@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GitPeek</string>
+
+    <string name="detail">Detail</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="favorite">Favorite</string>
+    <string name="setting">Setting</string>
+    <string name="count">100</string>
+    <string name="content_description_back">Kembali</string>
+    <string name="content_description_favorite">Ditambahkan sebagai favorite</string>
+    <string name="content_description_tablayout">Deskripsi Tab Layout</string>
+</resources>
